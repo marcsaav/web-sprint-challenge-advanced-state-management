@@ -28,7 +28,7 @@ export const smurfsReducer = (state = initialState, action) => {
                     console.log(res)
                 })
                 .catch((err) => {
-                    debugger
+                    alert(err.response.data.Error)
                 })
             return {
                 ...state,
